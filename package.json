@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js/graphql": "^0.3.1",
     "@sap/cds": "^6",
     "express": "^4"
   },
@@ -21,5 +22,13 @@
   "sapux": [
     "app/risks",
     "app/mitigations"
-  ]
+  ],
+  "cds": {
+    "protocols": {
+      "graphql": {
+        "impl": "@cap-js/graphql",
+        "path": "/graphql"
+      }
+    }
+  }
 }
